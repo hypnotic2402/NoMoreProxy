@@ -1,0 +1,28 @@
+
+button {
+    padding: 15px 25px;
+    font-size: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+  border: 2px solid black;
+  text-align: center;
+  box-shadow: 0 7px grey;
+}
+button:hover{
+    color: gray;
+    background-color: black;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+}
+button:active {
+  background-color: blanchedalmond;
+  box-shadow: 0 4px grey ;
+  transform: translateY(3px);
+}
+div{
+    margin: auto;
+    text-align: center;
+    padding: 10px 15px;
+}
