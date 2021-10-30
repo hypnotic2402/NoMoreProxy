@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="mark_attendance_style.css" />
+    <title>Maal</title>
+  </head>
+  <body>
+    <div>
+        <button id="openvijio">Open webcam:</button>
+      </div>
+      <div id="vid_ka_container">
+        <video id="player" autoplay height="300" width="300"></video>
+      </div>
+      <div>
+        <button id="capture">Capture</button>
+        <button id="download" onclick="DownloadCanvasAsImage()">Download</button>
+      </div>
+      <div id="canvas_ka_container">
+        <canvas id="canvas" width="300" height="250"></canvas>
+      </div>
+    <script src="mark_attendance_javascript.js"></script>
+  </body>
+</html>

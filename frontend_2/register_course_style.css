@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(maal2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	
+	/* -webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px); */
+}
+.contact-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 450px;
+	padding: 60px 40px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.contact-form label {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+	font-size: 30px;
+}
+.contact-form input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contact-form input[type=text],  .contact-form input[type=date] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 24px;
+}
+.contact-form input[type=submit] {
+	height: 50px;
+	color: #fff;
+	font-size: 15px;
+	background: rgb(223, 13, 13);
+	cursor: pointer;
+	
+	border: none;
+	outline: none;
+	margin-top: 5%;
+	opacity: 0.8;
+}
+.contact-form input[type=submit]:hover{
+	opacity:1;
+}
+.contact-form a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}

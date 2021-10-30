@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="register_course_style.css" />
+  </head>
+  <body>
+    
+    <div class="contact-form">
+      <form onsubmit="download(this['Proffessor_Name'].value,this['course_name'].value,this['course_date'].value)" class="container">
+        <label for="Proffessor_Name">Proffessor name:</label>
+        <input
+          type="text"
+          id="Proffessor_Name"
+          name="Proffessor_Name"
+          placeholder="Enter Your Name..."
+        /><br />
+        <label for="course_name">Course Name</label>
+        <input
+          type="text"
+          id="course_name"
+          name="course_name"
+          placeholder="Enter Name Of Course..."
+        /><br />
+        <label for="course_date">Choose date for class</label>
+        <input type="date" id="course_date" name="course_date" />
+        <input type="submit" id="save_karlo" />
+        
+      </form>
+    </div>
+    <script src="register_course_javascript.js"></script>
+  </body>
+</html>
