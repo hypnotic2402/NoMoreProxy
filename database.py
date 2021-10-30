@@ -2,7 +2,7 @@ import mysql.connector
 
 mydb = mysql.connector.connect(
   host="localhost",
-  user="overwatch",
+  user="OverWatch",
   password="Error@404"
 )
 
@@ -77,6 +77,7 @@ class Course:
     def markattendence(self,face,date,name):
         if(face):
             mycur.execute("update "+self.course_name+" set "+date+" = '1' where name = '"+name+"';")
+
             # mycur.commit()
 
 
@@ -145,39 +146,39 @@ class College:
 
 
 
-newclg = College("trial1")
-#newclg.delete()
-newclg.create_student(1)
-c1 = Course("CS101","c1")
-c2 = Course("CS102","c2")
-c3 = Course("CS103","c3")
-newclg.add_course(c1)
-newclg.add_course(c2)
-newclg.add_course(c3)
+# newclg = College("trial1")
+# #newclg.delete()
+# newclg.create_student(1)
+# c1 = Course("CS101","c1")
+# c2 = Course("CS102","c2")
+# c3 = Course("CS103","c3")
+# newclg.add_course(c1)
+# newclg.add_course(c2)
+# newclg.add_course(c3)
 
 
-#get course by course id
-s1 = Student("I1","mudizi","./modiji.jpg")
-c1p = newclg.getcourse("CS101")
-s1.add_course(c1p)
-newclg.add_students(s1)
-#s1.add_course(c2)
+# #get course by course id
+# s1 = Student("I1","mudizi","./modiji.jpg")
+# c1p = newclg.getcourse("CS101")
+# s1.add_course(c1p)
+# newclg.add_students(s1)
+# #s1.add_course(c2)
+ 
+# s2 = Student("I2","pappu","./modiji.jpg")
+# c2p = newclg.getcourse("CS102")
+# s2.add_course(c2p)
+# newclg.add_students(s2)
 
-s2 = Student("I2","pappu","./modiji.jpg")
-c2p = newclg.getcourse("CS102")
-s2.add_course(c2p)
-newclg.add_students(s2)
+# s3 = Student("I3","kejri","./modiji.jpg")
+# c1p = newclg.getcourse("CS101")
+# s3.add_course(c1p)
+# newclg.add_students(s3)
 
-s3 = Student("I3","kejri","./modiji.jpg")
-c1p = newclg.getcourse("CS101")
-s3.add_course(c1p)
-newclg.add_students(s3)
+# c1.addstudents(1)
+# c2.addstudents(1)
+# c3.addstudents(1)
+# c1.add_class("class21112020")
+# a,b = newclg.getlist("c1")
+# print(b)
 
-c1.addstudents(1)
-c2.addstudents(1)
-c3.addstudents(1)
-c1.add_class("class21112020")
-a,b = newclg.getlist("c1")
-print(b)
-
-c1.markattendence(1,"class21112020","c1")
+# c1.markattendence(1,"class21112020","c1")

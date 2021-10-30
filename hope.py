@@ -34,22 +34,22 @@ def check_present(imgPaths , testimgPath , nameList , superPath):#put superPath 
             return nameList[j]
         j+= 1
 
-    return "No such Student in Registered List"
+    return "-1"
     
 
 
 #test driver code
 
 
-p1 = "sample_img/"
-rip = os.listdir(p1)
+# p1 = "sample_img/"
+# rip = os.listdir(p1)
 
-tpi = input("enter test img path : ")
-tp = tpi
+# tpi = input("enter test img path : ")
+# tp = tpi
 
-nl = [ "pappu" , "Mudizi"]
+# nl = [ "pappu" , "Mudizi"]
 
-print(check_present(rip , tp , nl,p1))
+# print(check_present(rip , tp , nl,p1))
 
 
-cv2.waitKey(0)
+# cv2.waitKey(0)
