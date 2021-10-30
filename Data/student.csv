@@ -1,0 +1,22 @@
+roll_no,name,photograph,c1,c2,c3
+IMT2020001,Agastya T, ./sample_img/agastya.jpeg,ESS112,ESS111,CS101
+IMT2020002,Anwit D, ./sample_img/anwit.jpeg,ESS113,ESS114,CS102
+IMT2020003,Darpan, ./sample_img/darpan.jpeg,ESS102,ESS111,CS103
+IMT2020004,Rahul J, ./sample_img/h.jpeg,ESS112,ESS101,CS101
+IMT2020005,Ishaan J, ./sample_img/ishaan.jpeg,ESS114,ESS113,CS101
+IMT2020006,Jainav S, ./sample_img/j.jpeg,ESS112,ESS102,CS101
+IMT2020007,Arvind K, ./sample_img/kejri.jpeg,ESS112,ESS111,CS102
+IMT2020008,Kaushik M, ./sample_img/kosik.jpeg,ESS112,ESS114,CS101
+IMT2020009,Karanjeet S, ./sample_img/ks.jpeg,ESS103,ESS111,CS102
+IMT2020010,Chaitanya M, ./sample_img/manas.jpeg,ESS102,ESS111,CS103
+IMT2020011,Monjoy C, ./sample_img/monjoy.jpeg,ESS112,ESS114,CS101
+IMT2020001,Narendera Modi, ./sample_img/NarenderaModi.jpeg,ESS112,ESS111,CS101
+IMT2020012,Netradeepak C, ./sample_img/nc.jpeg,ESS102,ESS103,CS103
+IMT2020013,Rahul G, ./sample_img/Pappu.jpeg,ESS103,ESS101,CS101
+IMT2020014,Prabal M, ./sample_img/prabal.jpeg,ESS112,ESS111,CS101
+IMT2020015,Prakhar R, ./sample_img/prakhar.jpeg,ESS112,ESS102,CS102
+IMT2020016,Sarthak H, ./sample_img/sarthic.jpeg,ESS111,ESS103,CS101
+IMT2020017,Shreeyansh R, ./sample_img/shreya.jpeg,ESS112,ESS111,CS103
+IMT2020018,Harsh S, ./sample_img/u.jpeg,ESS112,ESS111,CS103
+IMT2020019,Vatsal D, ./sample_img/vatsal.jpeg,ESS112,ESS101,CS101
+IMT2020020,Vyom S, ./sample_img/vyom.jpeg,ESS112,ESS114,CS102
