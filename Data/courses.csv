@@ -1,11 +1,11 @@
 course_id,course_name
-CS101, Discrete_Mathematics
-CS102, DSA
-CS103, Algorithms
-ESS111, C_Programming
-ESS112, Python_Programming
-ESS113, Java_Programming
-ESS114, CPP_Programming
-ESS101, Digital_Design
-ESS102, Computer_Architecture
-ESS103, Processor_Architecture
+CS101,Discrete_Mathematics
+CS102,DSA
+CS103,Algorithms
+ESS111,C_Programming
+ESS112,Python_Programming
+ESS113,Java_Programming
+ESS114,CPP_Programming
+ESS101,Digital_Design
+ESS102,Computer_Architecture
+ESS103,Processor_Architecture

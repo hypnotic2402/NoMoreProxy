@@ -127,7 +127,7 @@ class College:
             if(i == self.noofcourses):
                 s = s+"course"+str(i)+" = '" + c.getcourseid() + "'"
             else:
-                s = s+"course"+str(i)+" = '" + c.getcourseid() + "' OR"
+                s = s+"course"+str(i)+" = '" + c.getcourseid() + "' OR "
 
         mycur.execute("Select addressphoto from Students where ("+s+");")
         

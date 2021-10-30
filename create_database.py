@@ -2,7 +2,7 @@ from database import *
 import csv
 
 newclg = College("trial2")
-
+# newclg.delete()
 #list of courses
 rows = []
 with open("./Data/courses.csv", 'r') as file:
@@ -45,3 +45,6 @@ for i in rows:
     c = newclg.getcourse(i[0])
     c.addstudents(x-3)
 
+
+a,b = newclg.getlist("DSA")
+print(b)
