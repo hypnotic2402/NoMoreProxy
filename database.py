@@ -2,7 +2,7 @@ import mysql.connector
 
 mydb = mysql.connector.connect(
   host="localhost",
-  user="OverWatch",
+  user="overwatch",
   password="Error@404"
 )
 
@@ -61,7 +61,7 @@ class Course:
             if(i == noofcourses):
                 s = s+"course"+str(i)+" = '" + self.course_name + "'"
             else:
-                s = s+"course"+str(i)+" = '" + self.course_name + "' OR"
+                s = s+"course"+str(i)+" = '" + self.course_name + "' OR "
 
         mycur.execute("Select roll_no from Students where ("+s+")")
         
