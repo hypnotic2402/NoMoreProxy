@@ -2,7 +2,13 @@ from hope import *
 from database import *
 
 newclg = College("trial1")
+
+# While running the code, for testing purposes, uncomment below line, run  the code, then comment the line and run again
+
 # newclg.delete()
+
+
+
 newclg.create_student(1)
 c1 = Course("CS101","c1")
 c2 = Course("CS102","c2")
@@ -48,7 +54,7 @@ nameList = []
 for i in b:
     nameList.append(i[0])
 
-r = check_present(refList , "./modi2.jpg" , nameList , "")
+r = check_present(refList , "./test_images/k2.jpg" , nameList , "")
 
 f = 0
 if r != "-1":

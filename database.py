@@ -6,11 +6,10 @@ mydb = mysql.connector.connect(
   password="Error@404"
 )
 
-if(mydb):
-    print("Hello")
+# if(mydb):
+    # print("Hello")
 
-else:
-    print("Error connecting")
+if not (mydb): print("Error connecting")
 
 mycur = mydb.cursor()
 
@@ -20,6 +19,8 @@ class Student:
         self.name = name
         self.listofcourses = []
         self.photograph = photograph
+
+
 
     def add_course(self,course):
         self.listofcourses.append(course)
@@ -103,7 +104,7 @@ class College:
             s = s+"course"+str(i)+" varchar(255),"
 
         mycur.execute("create table if not exists Students ( roll_no varchar(255),name varchar(255), "+s + "addressphoto varchar(255));")
-        print("create table if not exists Students ( roll_no varchar(255),name varchar(255), "+s + "addressphoto varchar(255));")    
+        # print("create table if not exists Students ( roll_no varchar(255),name varchar(255), "+s + "addressphoto varchar(255));")    
     
     def add_students(self,s):
         c = ""
@@ -128,11 +129,11 @@ class College:
 
         mycur.execute("Select addressphoto from Students where ("+s+");")
         
-        print("Select addressphoto from Students where ("+s+");")
+        # print("Select addressphoto from Students where ("+s+");")
         
         addressphoto = mycur.fetchall()
         
-        print(addressphoto)
+        # print(addressphoto)
         mycur.execute("Select name from Students where ("+s+")")
     
         name = mycur.fetchall()
