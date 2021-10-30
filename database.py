@@ -32,6 +32,7 @@ class Student:
         return self.name
 
     def getlistofcourses(self):
+        # print(self.listofcourses)
         return self.listofcourses   
 
     def getphotograph(self):
@@ -91,6 +92,7 @@ class College:
 
     def add_course(self,course):
         self.courselist.append(course);
+
 
     def getcourse(self,id): 
         for i in self.courselist:

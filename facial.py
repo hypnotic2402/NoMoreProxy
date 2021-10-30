@@ -4,7 +4,7 @@ from database import *
 
 newclg = College("trial1")
 
-# While running the code, for testing purposes, uncomment below line, run  the code, then comment the line and run again
+# While running the code, for testing p urposes, uncomment below line, run  the code, then comment the line and run again
 
 # newclg.delete()
 
