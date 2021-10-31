@@ -1,6 +1,8 @@
 from database import *
 import csv
 
+from hope import *
+
 newclg = College("trial2")
 # newclg.delete()
 #list of courses
@@ -46,5 +48,24 @@ for i in rows:
     c.addstudents(x-3)
 
 
-a,b = newclg.getlist("DSA")
-print(b)
+a,b = newclg.getlist("Discrete_Mathematics")
+print(a)
+c = newclg.getcourse("CS101")
+c.add_class("class11102012")
+
+refList = []
+for i in a:
+    refList.append(i[0])
+
+nameList = []
+for i in b:
+    nameList.append(i[0])
+
+r = check_present(refList , "./test_images/h2.jpeg" , nameList , "")
+
+f = 0
+if r != "-1":
+    f = 1
+
+c.markattendence(f , "class11102012" , r)
+print(r)

@@ -47,7 +47,7 @@ class Course:
 
     def add_class(self,date):
         mycur.execute("Alter table "+ self.course_name+" add " + date + " varchar(255) default '0';")
-
+        mydb.commit()
 
     def getcourseid(self):
         return self.course_id
@@ -69,7 +69,7 @@ class Course:
 
         for i in self.students:
             mycur.execute("Insert into "+ self.course_name+" values ('"+i+"');")
-            mycur.commit()
+            mydb.commit()
 
 
     # get roll no from name of the student
@@ -80,8 +80,12 @@ class Course:
         if(face):
             mycur.execute("update "+self.course_name+" set "+date+" = '1' where name = '"+name+"';")
 
-            # mycur.commit()
+            mydb.commit()
 
+    def output(self):
+        mycur.execute("select * from "+self.course_name+";")
+        a = mycur.fetchall()
+        return a
 
 class College:
     def __init__(self,college_name):
@@ -115,7 +119,7 @@ class College:
 
         # print(s.getname())
         mycur.execute("insert into Students values ('"+s.getroll() + "','"+s.getname()+"',"+c+"'"+s.getphotograph()+"');")
-        # mycur.commit()
+        mydb.commit()
 
     def getlist(self,course_name):
         for i in self.courselist:
@@ -140,6 +144,7 @@ class College:
     
         name = mycur.fetchall()
         return addressphoto,name
+
 
     
     def delete(self):

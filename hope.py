@@ -21,6 +21,7 @@ def check_present(imgPaths , testimgPath , nameList , superPath):#put superPath 
     reference_images=[]
     i = 0
     for name in imgPaths:
+        print(name)
         reference_images.append(Image(superPath + name, nameList[i]))
         i+= 1
 
