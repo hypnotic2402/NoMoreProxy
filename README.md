@@ -13,6 +13,7 @@ Technologies used:
 - Javascript
 
 Main file for backend : facial.py
+
 Main File for frontend: frontend_2/homepage.html
 
 PS: there's a little incoherence between frontend and backend as the images and form are stored locally by the user and then run against the python script. We aim to fix that soon and implement a completely automated version of this :).
