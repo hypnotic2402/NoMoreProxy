@@ -62,14 +62,15 @@ class Course:
                 s = s+"course"+str(i)+" = '" + self.course_name + "'"
             else:
                 s = s+"course"+str(i)+" = '" + self.course_name + "' OR "
-
+        # print(s)
         mycur.execute("Select roll_no from Students where ("+s+")")
         
-        self.students = mycur.fetchall()
+        self.student = mycur.fetchall()
+        # print(self.students)
 
-        for i in self.students:
-            mycur.execute("Insert into "+ self.course_name+" values ('"+i+"');")
-            mydb.commit()
+        # for i in self.student:
+        #     mycur.execute("Insert into "+ self.course_name+" values ('"+i+"');")
+        #     mydb.commit()
 
 
     # get roll no from name of the student

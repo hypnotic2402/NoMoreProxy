@@ -28,11 +28,11 @@ closevijio.addEventListener("click", () => {
 
 function DownloadCanvasAsImage() {
   let downloadLink = document.createElement("a");
-  downloadLink.setAttribute("download", "maal.png");
+  downloadLink.setAttribute("download", "maal.jpg");
   let canvas = document.getElementById("canvas");
-  let dataURL = canvas.toDataURL("image/png");
+  let dataURL = canvas.toDataURL("image/jpg");
   let url = dataURL.replace(
-    /^data:image\/png/,
+    /^data:image\/jpg/,
     "data:application/octet-stream"
   );
   downloadLink.setAttribute("href", url);
