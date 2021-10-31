@@ -45,14 +45,15 @@ for i in rows_students:
 
 for i in rows:
     c = newclg.getcourse(i[0])
+    # print(c.getcoursename())
     c.addstudents(x-3)
 
 
 a,b = newclg.getlist("Discrete_Mathematics")
 print(a)
 c = newclg.getcourse("CS101")
-c.add_class("class11102012")
-
+c.add_class("class11102020")
+print(c.output())
 refList = []
 for i in a:
     refList.append(i[0])
@@ -67,5 +68,5 @@ f = 0
 if r != "-1":
     f = 1
 
-c.markattendence(f , "class11102012" , r)
+c.markattendence(f , "class11102020" , r)
 print(r)
