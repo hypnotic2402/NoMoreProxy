@@ -3,7 +3,7 @@
   width: 100%;
   background-image: url(maal4.jpg);
   overflow: hidden ;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
  */
