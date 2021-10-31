@@ -1,7 +1,12 @@
 .lgbtq{
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  background-image: url(maal4.jpg);
+  overflow: hidden ;
+  background-size: contain;
+  background-position: center;
+  /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+ */
 }
 button {
     padding: 15px 25px;
@@ -14,7 +19,7 @@ button {
   box-shadow: 0 7px grey;
 }
 button:hover{
-    color: gray;
+    color: white;
     background-color: black;
     border-radius: 8px;
     border: 2px solid black;
@@ -22,6 +27,7 @@ button:hover{
 }
 button:active {
   background-color: blanchedalmond;
+  color: black;
   box-shadow: 0 4px grey ;
   transform: translateY(3px);
 }
